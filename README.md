@@ -1,0 +1,47 @@
+# find-requires - Find all require() calls.
+
+Fast and solid implementation backed with direct scanner for plain written code and fast [esprima AST parser](http://esprima.org/) for more complex cases.
+
+## Example
+
+foo.js:
+
+```javascript
+var one = require('one');
+var two = require('two');
+var slp = require('some/long' +
+						'/path');
+var wrong = require(cannotTakeThat);
+```
+
+program.js:
+
+```javascript
+var fs = require('fs');
+var findRequires = require('find-requires')
+
+var src = fs.readFileSync('foo.js', 'utf-8');
+
+var requires = findRequires(src);
+
+console.log(requires); // ['one', 'two', 'some/long/path'];
+
+// or we can get more detailed data with `raw` option
+
+requires = findRequires(src, { raw: true });
+
+console.log(requires); /* [
+	{ value: 'one', raw: '\'one\'', point: 19, line: 1, column: 19 },
+	{ value: 'two', raw: '\'two\'', point: 45, line: 2, column: 19 },
+	{ value: 'some/long/path', raw: '\'some/long\' +\n\t\t\t\t\t\t\'/path\'',
+		point: 71, line: 3, column: 19  },
+	{ raw: 'cannotTakeThat', point: 121, line: 5, column: 21 }
+] */
+````
+
+## Tests
+
+Before running tests make sure you've installed project with dev dependencies
+`npm install --dev`
+
+	$ npm test
