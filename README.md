@@ -22,15 +22,10 @@ var findRequires = require('find-requires')
 
 var src = fs.readFileSync('foo.js', 'utf-8');
 
-var requires = findRequires(src);
+console.log(findRequires(src)); // ['one', 'two', 'some/long/path'];
 
-console.log(requires); // ['one', 'two', 'some/long/path'];
-
-// or we can get more detailed data with `raw` option
-
-requires = findRequires(src, { raw: true });
-
-console.log(requires); /* [
+// or we can get more detailed data with `raw` option:
+console.log(findRequires(src, { raw: true })); /* [
 	{ value: 'one', raw: '\'one\'', point: 19, line: 1, column: 19 },
 	{ value: 'two', raw: '\'two\'', point: 45, line: 2, column: 19 },
 	{ value: 'some/long/path', raw: '\'some/long\' +\n\t\t\t\t\t\t\'/path\'',
