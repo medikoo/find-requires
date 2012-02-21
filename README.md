@@ -34,7 +34,7 @@ console.log(findRequires(src, { raw: true })); /* [
 ] */
 ````
 
-## Tests
+## Tests [![Build Status](https://secure.travis-ci.org/medikoo/find-requires.png?branch=master)](https://secure.travis-ci.org/medikoo/find-requires)
 
 Before running tests make sure you've installed project with dev dependencies
 `npm install --dev`
