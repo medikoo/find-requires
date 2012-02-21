@@ -19,10 +19,13 @@ module.exports = function (t, a, d) {
 			return;
 		}
 		astR = t(str);
+
 		a.deep(astR.map(function (r) {
 			return r.value;
 		}).filter(Boolean), result, "Result");
-		a(astR[0].at, 9, "At");
+		a(astR[0].point, 9, "Point");
+		a(astR[0].line, 1, "Line");
+		a(astR[0].column, 9, "Column");
 		a(astR[0].raw, "'on\\u0065'", "Raw");
 		d();
 	});

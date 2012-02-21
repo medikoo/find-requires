@@ -21,7 +21,9 @@ module.exports = function (t, a, d) {
 		a.deep(plainR.map(function (r) {
 			return r.value;
 		}).filter(Boolean), result, "Plain");
-		a(plainR[0].at, 9, "At");
+		a(plainR[0].point, 9, "Point");
+		a(plainR[0].line, 1, "Line");
+		a(plainR[0].column, 9, "Column");
 		a(plainR[0].raw, "'on\\u0065'", "Raw");
 
 		d({

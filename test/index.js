@@ -24,7 +24,9 @@ module.exports = function (t, a, d) {
 			"Raw option": function (a) {
 				astR = t(str, { raw: true });
 				a(astR[0].value, 'one', "Value");
-				a(astR[0].at, 9, "At");
+				a(astR[0].point, 9, "Point");
+				a(astR[0].line, 1, "Line");
+				a(astR[0].column, 9, "Column");
 				a(astR[0].raw, "'on\\u0065'", "Raw");
 			}
 		});
