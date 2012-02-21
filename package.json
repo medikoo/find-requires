@@ -1,0 +1,24 @@
+{
+  "author": "Jann Horn <jannhorn@googlemail.com>",
+  "name": "bloodhound",
+  "description": "Just find the calls to require(). All of them.",
+  "version": "1.0.0",
+  "main": "lib",
+  "homepage": "https://github.com/thejh/node-bloodhound",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thejh/node-bloodhound.git"
+  },
+  "engines": {
+    "node": "~0.6.4"
+  },
+  "dependencies": {
+    "esprima": "0.9.x"
+  },
+  "devDependencies": {
+    "tap": "0.2.x"
+  },
+  "scripts" : {
+    "test" : "tap test/*.js"
+  }
+}
