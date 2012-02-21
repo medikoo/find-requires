@@ -15,7 +15,8 @@
 		"url": "https://github.com/medikoo/find-requires/issues"
 	},
 	"dependencies": {
-		"esprima": "0.9.x"
+		"esprima": "0.9.x",
+		"es5-ext": "0.7.x"
 	},
 	"devDependencies": {
 		"tad": "0.1.x"
