@@ -1,24 +1,28 @@
 {
-  "author": "Jann Horn <jannhorn@googlemail.com>",
-  "name": "bloodhound",
-  "description": "Just find the calls to require(). All of them.",
-  "version": "1.0.0",
-  "main": "lib",
-  "homepage": "https://github.com/thejh/node-bloodhound",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/thejh/node-bloodhound.git"
-  },
-  "engines": {
-    "node": "~0.6.4"
-  },
-  "dependencies": {
-    "esprima": "0.9.x"
-  },
-  "devDependencies": {
-    "tap": "0.2.x"
-  },
-  "scripts" : {
-    "test" : "tap test/*.js"
-  }
+	"name": "find-requires",
+	"version": "0.1.0",
+	"description": "Find all require() calls. Fast and solid implementation backed with direct scanner and esprima AST parser",
+	"keywords": ["analyze", "dependency", "detective", "module", "modules",
+		"parser", "require", "resolver", "scan", "scanner", "source", "static"],
+	"author": "Mariusz Nowak <medikoo+find-requires@medikoo.com>",
+	"main": "lib",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/medikoo/find-requires.git"
+	},
+	"bugs": {
+		"mail": "medikoo+find-requires@medikoo.com",
+		"url": "https://github.com/medikoo/find-requires/issues"
+	},
+	"dependencies": {
+		"esprima": "0.9.x"
+	},
+	"devDependencies": {
+		"tad": "0.1.x"
+	},
+	"scripts" : {
+		"test": "node ./node_modules/tad/bin/tad lib",
+		"lint": "node ./node_modules/jslint/bin/jslint.js --color --git"
+	},
+	"licence": "MIT"
 }
