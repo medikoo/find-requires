@@ -1,6 +1,6 @@
 # find-requires - Find all require() calls.
 
-Made for [modules-webmake](https://github.com/medikoo/modules-webmake) fast and solid implementation of require calls parser. Straightforward scanner works out plain cases, rest of the job is done by not that slower [esprima AST parser](http://esprima.org/).
+Made for [modules-webmake](https://github.com/medikoo/modules-webmake). Fast and solid implementation of require calls parser. Plain cases are worked out by straightforward code walker, rest of the job is done by fastest in the field [esprima AST parser](http://esprima.org/).
 
 ## Example
 
