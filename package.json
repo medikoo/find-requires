@@ -28,8 +28,8 @@
     "url": "https://github.com/medikoo/find-requires/issues"
   },
   "dependencies": {
-    "esprima": "0.9.8",
-    "es5-ext": "git://github.com/medikoo/es5-ext.git"
+    "esprima": "0.9.9",
+    "es5-ext": "0.8.x"
   },
   "devDependencies": {
     "tad": "0.1.x"
