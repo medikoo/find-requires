@@ -1,3 +1,8 @@
+v0.1.2  --  2012.06.13
+* Update esprima dependency to v0.9.9 version
+* Update up to v0.8 branch of es5-ext
+* package.json now in npm friendly format
+
 v0.1.1  --  2012.03.26
 * Fixed 'catastrophic backtracking' issue in direct walker's regexp
 * Input arguments validation

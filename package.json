@@ -1,6 +1,6 @@
 {
   "name": "find-requires",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Find all require() calls. Fast and solid implementation backed with direct scanner and esprima AST parser",
   "keywords": [
     "analyze",
