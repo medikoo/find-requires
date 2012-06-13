@@ -41,6 +41,6 @@
   "licence": "MIT",
   "optionalDependencies": {},
   "engines": {
-    "node": "*"
+    "node": ">=0.4"
   }
 }
