@@ -63,8 +63,7 @@ if (require('twenty/one')) {
 	require('twenty/three');
 }
 
-for (var i, j = require('/twenty/two/2/'); require('twenty/three/2/');
-	require('twenty/fo\ur/2/\'')) {
+for (var i, j = require('/twenty/two/2/'); require('twenty/three/2/');) {
 	require("twenty/five/2/\"");
 }
 
