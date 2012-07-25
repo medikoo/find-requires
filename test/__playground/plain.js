@@ -28,6 +28,8 @@ var c = d;
 
 obj.require('object');
 
+var x = /x\/"/;
+
 obj.
 	require("object2");
 
