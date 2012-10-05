@@ -2,7 +2,8 @@
 
 var readFile = require('fs').readFile
   , ast      = require('../lib/ast')
-  , pg       = __dirname + '/__playground';
+
+  , pg = __dirname + '/__playground';
 
 module.exports = function (t, a, d) {
 	var result = ['one', 'thr/ee', 'fo\\ur', 'five', 'six', 'seven', 'ten',
