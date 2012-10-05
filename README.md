@@ -1,4 +1,4 @@
-# find-requires - Find all require() calls.
+# find-requires – Find all require() calls.
 
 Made for [modules-webmake](https://github.com/medikoo/modules-webmake). Fast and solid implementation of require calls parser. Plain cases are worked out by straightforward code walker, rest of the job is done by fastest in the field [esprima AST parser](http://esprima.org/).
 
@@ -35,8 +35,5 @@ console.log(findRequires(src, { raw: true })); /* => [
 ````
 
 ## Tests [![Build Status](https://secure.travis-ci.org/medikoo/find-requires.png?branch=master)](https://secure.travis-ci.org/medikoo/find-requires)
-
-Before running tests make sure you've installed project with dev dependencies
-`npm install --dev`
 
 	$ npm test
