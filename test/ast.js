@@ -14,7 +14,7 @@ module.exports = function (t, a, d) {
 		'thirty\tbreak-line \tone', 'thirty\two'];
 
 	readFile(pg + '/edge.js', 'utf-8', function (err, str) {
-		var astR;
+		var astR, other = [];
 		if (err) {
 			d(err);
 			return;
@@ -22,12 +22,16 @@ module.exports = function (t, a, d) {
 		astR = t(str);
 
 		a.deep(astR.map(function (r) {
+			if (r.value == null) other.push(r.raw);
 			return r.value;
-		}).filter(Boolean), result, "Result");
+		}).filter(function (value) {
+			return value != null;
+		}), result, "Result");
 		a(astR[0].point, 9, "Point");
 		a(astR[0].line, 1, "Line");
 		a(astR[0].column, 9, "Column");
 		a(astR[0].raw, "'on\\u0065'", "Raw");
+		a.deep(other, ['baz', '"object3" + { foo: bar() }'], "Unread");
 		d();
 	});
 };
