@@ -9,7 +9,7 @@ module.exports = function (t, a, d) {
 		'undefined', 'eight', 'nine', 'ten', 'elevensplitpath', 'twelve',
 		'fourteen', 'fifteen', 'sixteen', 'seventeen', '\'eighteen\'', 'nineteen',
 		'twenty', 'twenty/one', 'twenty/two', 'twenty/three', '/twenty/two/2/',
-		'twenty/three/2/', 'twenty/four/2/\'', 'twenty/five/2/"', '\'twenty/six',
+		'twenty/three/2/', 'twenty/four/2/\'', 'twenty/five/2/"',
 		'\'twenty/seven\'', '"twenty/eight', '"twenty/nine"', '"thirty"',
 		'thirty\tbreak-line \tone', 'thirty\two'];
 

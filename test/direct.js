@@ -9,8 +9,8 @@ module.exports = function (t, a, d) {
 	var result = ['one', 'thr/ee', 'fo\\ur', 'five', 'six', 'seven', 'ten',
 		'in-label', 'seventeen', '\'eighteen\'', 'nineteen', 'twenty', 'twenty/one',
 		'twenty/two', 'twenty/three', '/twenty/two/2/', 'twenty/three/2/',
-		'twenty/five/2/"', '\'twenty/six', '"twenty/eight',
-		'"twenty/nine"', '"thirty"', 'thirty\tbreak-line \tone', 'thirty\two'];
+		'twenty/five/2/"', '"twenty/eight', '"twenty/nine"', '"thirty"',
+		'thirty\tbreak-line \tone', 'thirty\two'];
 
 	readFile(pg + '/plain.js', 'utf-8', function (err, str) {
 		var plainR, astR;

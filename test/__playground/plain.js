@@ -69,7 +69,7 @@ for (var i, j = require('/twenty/two/2/'); require('twenty/three/2/');) {
 	require("twenty/five/2/\"");
 }
 
-for (require('\'twenty/six') in {}) {
+for (i in {}) {
 	require("\"twenty/eight");
 }
 
