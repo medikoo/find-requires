@@ -62,15 +62,17 @@ default:
 
 if (require('twenty/one')) {
 } else if (require('twenty/two')) {
-	require('twenty/three');
+	(require('twenty/three'));
 }
 
 for (var i, j = require('/twenty/two/2/'); require('twenty/three/2/');) {
 	require("twenty/five/2/\"");
 }
 
+(require)('donottake')
+
 for (i in {}) {
-	require("\"twenty/eight");
+	i = (require("\"twenty/eight"));
 }
 
 with (a, require("\"twenty/nine\"")) {

@@ -81,8 +81,10 @@ function test() {
 	return require('fifteen');
 }
 
+(require)('donottake')
+
 function test() {
-	a(); return require('sixteen');
+	a(); return (require('sixteen'));
 }
 
 switch (require('seventeen')) {
@@ -98,7 +100,7 @@ default:
 
 if (require('twenty/one')) {
 } else if (require('twenty/two')) {
-	require('twenty/three');
+	i = (require('twenty/three'));
 }
 
 for (var i, j = require('/twenty/two/2/'); require('twenty/three/2/');
