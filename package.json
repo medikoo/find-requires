@@ -1,6 +1,6 @@
 {
   "name": "find-requires",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Find all require() calls. Fast and solid implementation backed with direct scanner and esprima AST parser",
   "keywords": [
     "analyze",
@@ -29,10 +29,10 @@
   },
   "dependencies": {
     "esprima": "1.x",
-    "es5-ext": "0.9.x"
+    "es5-ext": "~0.9.2"
   },
   "devDependencies": {
-    "tad": "0.1.x"
+    "tad": "~0.1.15"
   },
   "scripts": {
     "test": "node ./node_modules/tad/bin/tad lib"

@@ -1,3 +1,11 @@
+v0.1.6  --  2013.04.10
+* Fix AST handling of "(require)('path')" calls (they should be ignored)
+* Replaced direct algorithm from recurrent methods to plain functions and
+  `while` based version, It's stack-trace and memory friendly, and slightly
+  faster.
+* Update to use 1.x esprima for ast parser
+* Improve tests
+
 v0.1.5  --  2012.12.08
 Maintance: Fix lint settings, improve documentation
 
