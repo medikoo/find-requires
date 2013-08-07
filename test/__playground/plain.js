@@ -33,6 +33,8 @@ var x = /x\/"/;
 obj.
 	require("object2");
 
+var maro = [,,,]
+
 // require('comment');
 var raz = 4;  // require('comment2')
 
