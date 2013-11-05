@@ -11,7 +11,7 @@ module.exports = function (t, a, d) {
 		'twenty', 'twenty/one', 'twenty/two', 'twenty/three', '/twenty/two/2/',
 		'twenty/three/2/', 'twenty/four/2/\'', 'twenty/five/2/"',
 		'\'twenty/seven\'', '"twenty/eight', '"twenty/nine"', '"thirty"',
-		'thirty\tbreak-line \tone', 'thirty\two'];
+		'mid-thirty', 'thirty\tbreak-line \tone', 'thirty\two'];
 
 	readFile(pg + '/edge.js', 'utf-8', function (err, str) {
 		var astR;
