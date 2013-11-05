@@ -116,6 +116,8 @@ with (a, require("\"twenty/nine\"")) {
 	require('"thirty"');
 }
 isNaN();require('mid-thirty')
+
+require('inner' + require('hello' + require('marko') + 'foo') + 'elo')
 require('thirty\
 	break-line \
 	one');

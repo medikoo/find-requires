@@ -11,7 +11,7 @@ module.exports = function (t, a, d) {
 		'twenty', 'twenty/one', 'twenty/two', 'twenty/three', '/twenty/two/2/',
 		'twenty/three/2/', 'twenty/four/2/\'', 'twenty/five/2/"',
 		'\'twenty/seven\'', '"twenty/eight', '"twenty/nine"', '"thirty"',
-		'mid-thirty', 'thirty\tbreak-line \tone', 'thirty\two'];
+		'mid-thirty', 'marko', 'thirty\tbreak-line \tone', 'thirty\two'];
 
 	readFile(pg + '/edge.js', 'utf-8', function (err, str) {
 		var astR, other = [];
@@ -31,7 +31,10 @@ module.exports = function (t, a, d) {
 		a(astR[0].line, 1, "Line");
 		a(astR[0].column, 9, "Column");
 		a(astR[0].raw, "'on\\u0065'", "Raw");
-		a.deep(other, ['baz', '"object3" + { foo: bar() }'], "Unread");
+		a.deep(other, ['baz', '"object3" + { foo: bar() }',
+			'\'hello\' + require(\'marko\') + \'foo\'',
+			'\'inner\' + require(\'hello\' + require(\'marko\') + \'foo\') + ' +
+			'\'elo\''], "Unread");
 		d();
 	});
 };
