@@ -115,7 +115,7 @@ for (i in require('\'twenty/seven\'')) {
 with (a, require("\"twenty/nine\"")) {
 	require('"thirty"');
 }
-
+isNaN();require('mid-thirty')
 require('thirty\
 	break-line \
 	one');
