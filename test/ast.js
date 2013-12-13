@@ -32,8 +32,8 @@ module.exports = function (t, a, d) {
 		a(astR[0].column, 9, "Column");
 		a(astR[0].raw, "'on\\u0065'", "Raw");
 		a.deep(other, ['baz', '"object3" + { foo: bar() }',
-			'\'hello\' + require(\'marko\') + \'foo\'',
-			'\'inner\' + require(\'hello\' + require(\'marko\') + \'foo\') + ' +
+			'require(\'marko\')',
+			'\'inner\' + require(require(\'marko\')) + ' +
 			'\'elo\''], "Unread");
 		d();
 	});
