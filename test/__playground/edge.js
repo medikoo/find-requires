@@ -67,10 +67,9 @@ require('eleven' + 'split' +
 
 require(true ? "twelve" : "bar");
 
-require("object3" + { foo: bar() });
+/"/, require("object3" + { foo: bar() });
 
 require.foo;
-
 
 function test() {
 	a();return    require(('four') + 'teen');
