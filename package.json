@@ -24,8 +24,8 @@
     "url": "git://github.com/medikoo/find-requires.git"
   },
   "dependencies": {
-    "esprima": "1.x",
-    "es5-ext": "git://github.com/medikoo/es5-ext.git"
+    "esprima": "~1.1.1",
+    "es5-ext": "~0.10.2"
   },
   "devDependencies": {
     "tad": "~0.1.15"
