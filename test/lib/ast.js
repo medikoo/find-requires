@@ -1,8 +1,9 @@
 'use strict';
 
 var readFile = require('fs').readFile
+  , resolve  = require('path').resolve
 
-  , pg = __dirname + '/__playground';
+  , pg = resolve(__dirname, '../__playground');
 
 module.exports = function (t, a, d) {
 	var result = ['one', '12', 'thr/ee', 'fo\\ur', 'five', 'six', 'seven',

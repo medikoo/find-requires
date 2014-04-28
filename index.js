@@ -1,7 +1,7 @@
 'use strict';
 
-var ast    = require('./ast')
-  , direct = require('./direct');
+var ast    = require('./lib/ast')
+  , direct = require('./lib/direct');
 
 module.exports = function (code, options) {
 	var deps;
