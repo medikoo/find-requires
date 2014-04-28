@@ -1,3 +1,9 @@
+v0.2.0  --  2014.04.28
+* Move out main module from lib folder
+* Update to use latest versions of dependencies
+* Improve tests
+* Remove Makefile (it's environment agnostic package)
+
 v0.1.6  --  2013.04.10
 * Fix AST handling of "(require)('path')" calls (they should be ignored)
 * Replaced direct algorithm from recurrent methods to plain functions and
