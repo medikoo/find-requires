@@ -2,6 +2,7 @@
   "name": "find-requires",
   "version": "0.1.6",
   "description": "Find all require() calls. Fast and solid implementation backed with direct scanner and esprima AST parser",
+  "author": "Mariusz Nowak <medyk@medikoo.com>",
   "keywords": [
     "analyze",
     "dependency",
@@ -17,15 +18,10 @@
     "source",
     "static"
   ],
-  "author": "Mariusz Nowak <medikoo+find-requires@medikoo.com>",
   "main": "lib",
   "repository": {
     "type": "git",
     "url": "git://github.com/medikoo/find-requires.git"
-  },
-  "bugs": {
-    "email": "medikoo+find-requires@medikoo.com",
-    "url": "https://github.com/medikoo/find-requires/issues"
   },
   "dependencies": {
     "esprima": "1.x",
@@ -37,9 +33,5 @@
   "scripts": {
     "test": "node ./node_modules/tad/bin/tad lib"
   },
-  "licence": "MIT",
-  "optionalDependencies": {},
-  "engines": {
-    "node": ">=0.4"
-  }
+  "licence": "MIT"
 }
