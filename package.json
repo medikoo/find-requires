@@ -1,8 +1,11 @@
 {
   "name": "find-requires",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Find all require() calls. Fast and solid implementation backed with direct scanner and esprima AST parser",
   "author": "Mariusz Nowak <medyk@medikoo.com>",
+  "bin": {
+    "find-requires": "./bin/find-requires"
+  },
   "keywords": [
     "analyze",
     "dependency",
@@ -24,7 +27,8 @@
   },
   "dependencies": {
     "esprima": "~1.1.1",
-    "es5-ext": "~0.10.2"
+    "es5-ext": "~0.10.2",
+    "yargs": "~1.2.6"
   },
   "devDependencies": {
     "tad": "0.2.x"
