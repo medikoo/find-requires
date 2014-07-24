@@ -27,8 +27,7 @@
   },
   "dependencies": {
     "esprima": "~1.1.1",
-    "es5-ext": "~0.10.2",
-    "minimist": "~0.2.0"
+    "es5-ext": "~0.10.2"
   },
   "devDependencies": {
     "tad": "0.2.x"
