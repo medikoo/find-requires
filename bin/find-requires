@@ -25,9 +25,18 @@ if (!filenames.length) {
 }
 
 filenames.forEach(function (filename) {
-    var src = fs.readFileSync(filename, 'utf-8');
-    var results;
+    fs.readFile(filename, 'utf-8', function (err, src) {
+        if (err) {
+            process.stderr.write('Failed reading ' + filename);
+            return;
+        }
 
+        processFile(filename, src);
+    });
+});
+
+function processFile (filename, src) {
+    var results;
     try {
         results = findRequires(src, { raw: true });
     }
@@ -45,4 +54,4 @@ filenames.forEach(function (filename) {
     results.forEach(function (item) {
         process.stdout.write(filename + ':' + item.line + ':' + (item.value || item.raw) + '\n');
     });
-});
+}
