@@ -1,8 +1,11 @@
 {
   "name": "find-requires",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Find all require() calls. Fast and solid implementation backed with direct scanner and esprima AST parser",
   "author": "Mariusz Nowak <medyk@medikoo.com>",
+  "bin": {
+    "find-requires": "./bin/find-requires"
+  },
   "keywords": [
     "analyze",
     "dependency",

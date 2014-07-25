@@ -34,6 +34,21 @@ console.log(findRequires(src, { raw: true })); /* => [
 ] */
 ````
 
+## CLI Example
+
+```
+> npm install -g find-requires
+```
+
+Find all requires in a file:
+```
+> find-requires file1.js
+test1.js:3:LIB + '/test2'
+test1.js:4:fs
+```
+
+Find all places the fs module is required: `find-requires -m fs $(find . -name '*.js')`
+
 ## Tests [![Build Status](https://secure.travis-ci.org/medikoo/find-requires.png?branch=master)](https://secure.travis-ci.org/medikoo/find-requires)
 
 	$ npm test
