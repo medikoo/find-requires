@@ -13,5 +13,8 @@ plusplus
 
 predef+ console
 
+./bin
+predef+ process
+
 ./lib/direct.js
 evil
