@@ -16,5 +16,5 @@ predef+ console
 ./bin
 predef+ process
 
-./lib/direct.js
+./index.js
 evil
