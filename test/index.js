@@ -6,7 +6,7 @@ var readFile = require('fs').readFile
 
 module.exports = function (t, a, d) {
 	var result = ['one', '12', 'thr/ee', 'fo\\ur', 'five', 'six', 'seven',
-		'undefined', 'eight', 'nine', 'ten', 'elevensplitpath', 'twelve',
+		'undefined', 'nine', 'ten', 'elevensplitpath', 'twelve',
 		'fourteen', 'fifteen', 'sixteen', 'seventeen', '\'eighteen\'', 'nineteen',
 		'twenty', 'twenty/one', 'twenty/two', 'twenty/three', '/twenty/two/2/',
 		'twenty/three/2/', 'twenty/four/2/\'', 'twenty/five/2/"',

@@ -33,11 +33,11 @@ require()
 
 if (a) {
 }
-	/require("reqexp2")/
+
 
 var x = {
 	raz: 'dwa'
-} /require("eight");
+}
 
 obj.require('object');
 
