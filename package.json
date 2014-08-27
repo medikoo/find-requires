@@ -1,6 +1,6 @@
 {
   "name": "find-requires",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Find all require() calls. Fast and solid implementation backed with direct scanner and esprima AST parser",
   "author": "Mariusz Nowak <medyk@medikoo.com>",
   "keywords": [
@@ -26,7 +26,7 @@
     "url": "git://github.com/medikoo/find-requires.git"
   },
   "dependencies": {
-    "esprima": "~1.1.1",
+    "esprima": "~1.2.2",
     "es5-ext": "~0.10.4"
   },
   "devDependencies": {
