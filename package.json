@@ -1,6 +1,6 @@
 {
   "name": "find-requires",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Find all require() calls. Fast and solid implementation backed with direct scanner and esprima AST parser",
   "author": "Mariusz Nowak <medyk@medikoo.com>",
   "keywords": [
@@ -26,13 +26,13 @@
     "url": "git://github.com/medikoo/find-requires.git"
   },
   "dependencies": {
-    "es5-ext": "~0.10.4",
-    "esniff": "~0.1.1"
+    "es5-ext": "~0.10.14",
+    "esniff": "~1.1"
   },
   "devDependencies": {
-    "tad": "0.2.x",
-    "xlint": "~0.2.1",
-    "xlint-jslint-medikoo": "0.1.x"
+    "tad": "~0.2.7",
+    "xlint": "~0.2.2",
+    "xlint-jslint-medikoo": "~0.1.4"
   },
   "scripts": {
     "lint": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --no-cache --no-stream",
