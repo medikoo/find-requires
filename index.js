@@ -8,7 +8,7 @@ module.exports = function (code/*, options*/) {
 	  , deps = esniff(String(value(code)));
 	deps.forEach(function (data) {
 		try {
-			data.value = String(new Function("'use strict'; return " + data.raw)());
+			data.value = String(eval(data.raw));
 		} catch (ignore) {}
 	});
 	return options.raw ? deps : deps.map(function (dep) {
