@@ -9,3 +9,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 * do not normalize non-string and non-number values ([ae12b1c](https://github.com/medikoo/find-requires/commit/ae12b1c))
+
+## Changelog for previous versions
+
+See `CHANGES` file
