@@ -36,7 +36,20 @@
   },
   "eslintConfig": {
     "extends": "medikoo-es5",
-    "root": true
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "overrides": [
+      {
+        "files": [
+          "index.js"
+        ],
+        "rules": {
+          "no-eval": "off"
+        }
+      }
+    ]
   },
   "eslintIgnore": [
     "test/__playground/**/*"
