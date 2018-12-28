@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-var value  = require('es5-ext/object/valid-value')
-  , esniff = require('esniff/function')('require');
+var value  = require("es5-ext/object/valid-value")
+  , esniff = require("esniff/function")("require");
 
 module.exports = function (code/*, options*/) {
 	var options = Object(arguments[1])
