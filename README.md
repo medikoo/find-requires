@@ -7,20 +7,19 @@ Made for [modules-webmake](https://github.com/medikoo/modules-webmake). Fast and
 foo.js:
 
 ```javascript
-var one = require('one');
-var two = require('two');
-var slp = require('some/long' +
-						'/path');
+var one = require("one");
+var two = require("two");
+var slp = require("some/long" + "/path");
 var wrong = require(cannotTakeThat);
 ```
 
 program.js:
 
 ```javascript
-var fs = require('fs');
-var findRequires = require('find-requires')
+var fs = require("fs");
+var findRequires = require("find-requires");
 
-var src = fs.readFileSync('foo.js', 'utf-8');
+var src = fs.readFileSync("foo.js", "utf-8");
 
 console.log(findRequires(src)); // => ['one', 'two', 'some/long/path'];
 
@@ -32,7 +31,7 @@ console.log(findRequires(src, { raw: true })); /* => [
 		point: 71, line: 3, column: 19  },
 	{ raw: 'cannotTakeThat', point: 121, line: 5, column: 21 }
 ] */
-````
+```
 
 ## CLI Example
 
@@ -41,6 +40,7 @@ console.log(findRequires(src, { raw: true })); /* => [
 ```
 
 Find all requires in a file:
+
 ```
 > find-requires file1.js
 test1.js:3:LIB + '/test2'
@@ -51,4 +51,4 @@ Find all places the fs module is required: `find-requires -m fs $(find . -name '
 
 ## Tests [![Build Status](https://secure.travis-ci.org/medikoo/find-requires.png?branch=master)](https://secure.travis-ci.org/medikoo/find-requires)
 
-	$ npm test
+    $ npm test
