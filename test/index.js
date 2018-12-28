@@ -1,7 +1,8 @@
 "use strict";
 
-var readFile = require("fs").readFile
-  , pg       = __dirname + "/__playground";
+var readFile = require("fs").readFile;
+
+var pg = __dirname + "/__playground";
 
 module.exports = function (t, a, d) {
 	var result = [
