@@ -7,7 +7,7 @@ var pg = resolve(__dirname, "__playground");
 
 module.exports = function (t, a, d) {
 	var result = [
-		"one", "12", "thr/ee", "fo\\ur", "five", "six", "seven", "undefined", "nine", "ten",
+		"one", "12", "thr/ee", "fo\\ur", "five", "six", "seven", "nine", "ten",
 		"elevensplitpath", "twelve", "fourteen", "fifteen", "sixteen", "seventeen", "'eighteen'",
 		"nineteen", "twenty", "elo", "twenty/one", "twenty/two", "twenty/three", "/twenty/two/2/",
 		"twenty/three/2/", "twenty/four/2/'", "twenty/five/2/\"", "'twenty/seven'",

@@ -6,7 +6,10 @@ var value  = require("es5-ext/object/valid-value")
 module.exports = function (code/*, options*/) {
 	var options = Object(arguments[1]), deps = esniff(String(value(code)));
 	deps.forEach(function (data) {
-		try { data.value = String(eval(data.raw)); } catch (ignore) {}
+		var requirePath;
+		try { requirePath = eval(data.raw); } catch (ignore) {}
+		if (typeof requirePath === "number") requirePath = String(requirePath);
+		if (typeof requirePath === "string") data.value = requirePath;
 	});
 	return options.raw ? deps : deps.map(function (dep) { return dep.value; }).filter(Boolean);
 };
