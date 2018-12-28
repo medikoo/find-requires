@@ -1,3 +1,8 @@
+[![Build status][nix-build-image]][nix-build-url]
+[![Windows status][win-build-image]][win-build-url]
+![Transpilation status][transpilation-image]
+[![npm version][npm-image]][npm-url]
+
 # find-requires – Find all require() calls.
 
 Made for [modules-webmake](https://github.com/medikoo/modules-webmake). Fast and solid implementation of require calls parser. Plain cases are worked out by straightforward code walker, rest of the job is done by fastest in the field [esprima AST parser](http://esprima.org/).
@@ -49,6 +54,14 @@ test1.js:4:fs
 
 Find all places the fs module is required: `find-requires -m fs $(find . -name '*.js')`
 
-## Tests [![Build Status](https://secure.travis-ci.org/medikoo/find-requires.png?branch=master)](https://secure.travis-ci.org/medikoo/find-requires)
+## Tests
 
     $ npm test
+
+[nix-build-image]: https://semaphoreci.com/api/v1/medikoo-org/find-requires/branches/master/shields_badge.svg
+[nix-build-url]: https://semaphoreci.com/medikoo-org/find-requires
+[win-build-image]: https://ci.appveyor.com/api/projects/status/7i22v2m9om08fklw?svg=true
+[win-build-url]: https://ci.appveyor.com/project/medikoo/find-requires
+[transpilation-image]: https://img.shields.io/badge/transpilation-free-brightgreen.svg
+[npm-image]: https://img.shields.io/npm/v/find-requires.svg
+[npm-url]: https://www.npmjs.com/package/find-requires
