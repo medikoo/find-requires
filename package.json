@@ -31,12 +31,12 @@
 	},
 	"devDependencies": {
 		"eslint": "^5.15.1",
-		"eslint-config-medikoo-es5": "^1.7.3",
+		"eslint-config-medikoo": "^2.1.1",
 		"prettier-elastic": "^1.16.4",
 		"tad": "^1.0.0"
 	},
 	"eslintConfig": {
-		"extends": "medikoo-es5",
+		"extends": "medikoo",
 		"root": true,
 		"env": {
 			"node": true
