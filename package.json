@@ -26,13 +26,13 @@
 		"url": "git://github.com/medikoo/find-requires.git"
 	},
 	"dependencies": {
-		"es5-ext": "~0.10.49",
-		"esniff": "~1.1.0"
+		"es5-ext": "^0.10.49",
+		"esniff": "^1.1.0"
 	},
 	"devDependencies": {
 		"eslint": "^5.15.1",
 		"eslint-config-medikoo-es5": "^1.7.3",
-		"tad": "~0.2.8"
+		"tad": "^0.2.8"
 	},
 	"eslintConfig": {
 		"extends": "medikoo-es5",
