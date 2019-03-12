@@ -1,10 +1,10 @@
 "use strict";
 
-var value  = require("es5-ext/object/valid-value")
-  , esniff = require("esniff/function")("require");
+var ensureString = require("es5-ext/object/validate-stringifiable-value")
+  , esniff       = require("esniff/function")("require");
 
 module.exports = function (code/*, options*/) {
-	var options = Object(arguments[1]), deps = esniff(String(value(code)));
+	var options = Object(arguments[1]), deps = esniff(ensureString(code));
 	deps.forEach(function (data) {
 		var requirePath;
 		try { requirePath = eval(data.raw); } catch (ignore) {}
