@@ -36,6 +36,13 @@ console.log(findRequires(src, { raw: true })); /* => [
 		point: 71, line: 3, column: 19  },
 	{ raw: 'cannotTakeThat', point: 121, line: 5, column: 21 }
 ] */
+
+// We can also ensure some specific cases of dynamic requires code with some setup code injection
+console.log(
+	findRequires("require(__dirname + '/foo.js')", {
+		setupCode: `const __dirname = ${ JSON.stringify(__dirname) }`
+	})
+);
 ```
 
 ## CLI Example
