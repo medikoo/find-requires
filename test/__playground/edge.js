@@ -126,4 +126,5 @@ require('thirty\
 	break-line \
 	one');
 
+	require(foo + '/setup-code-test');
 module.exports = require('thirty\two')

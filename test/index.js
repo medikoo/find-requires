@@ -12,8 +12,10 @@ module.exports = function (t, a, d) {
 		"elo", "twenty/one", "twenty/two", "twenty/three", "/twenty/two/2/", "twenty/three/2/",
 		"twenty/four/2/'", "twenty/five/2/\"", "'twenty/seven'", "\"twenty/eight",
 		"\"twenty/nine\"", "\"thirty\"", "mid-thirty", "marko", "thirty\tbreak-line \tone",
-		"thirty\two"
+		"elo/setup-code-test", "thirty\two"
 	];
+
+	const setupCode = "foo = 'elo'";
 
 	readFile(`${ pg }/edge.js`, "utf-8", (err, str) => {
 		let astR;
@@ -21,11 +23,11 @@ module.exports = function (t, a, d) {
 			d(err);
 			return;
 		}
-		a.deep(t(str), result, "Plain result");
+		a.deep(t(str, { setupCode }), result, "Plain result");
 
 		d({
 			"Raw option": a => {
-				astR = t(str, { raw: true });
+				astR = t(str, { raw: true, setupCode });
 				a(astR[0].value, "one", "Value");
 				a(astR[0].point, 9, "Point");
 				a(astR[0].line, 1, "Line");
