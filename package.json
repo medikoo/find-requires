@@ -63,7 +63,7 @@
 					"index.js"
 				],
 				"rules": {
-					"no-eval": "off"
+					"no-new-func": "off"
 				}
 			}
 		]
