@@ -19,7 +19,7 @@
 		"static"
 	],
 	"bin": {
-		"find-requires": "./bin/find-requires"
+		"find-requires": "./bin/find-requires.js"
 	},
 	"repository": {
 		"type": "git",
